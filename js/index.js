@@ -31,14 +31,26 @@ const root = document.querySelector('.element')
  //array com caracteristicas css no js 
  // e que usa o outro index.js
  
- const textTitle = 'Bob'
- const textSmall = 'texto pequeno'
+ const textTitle = 'Difficult'
+ const pathMexicano = '/imagem/mexicano.png'
+ //const textSmall = 'texto pequeno'
 
-// tagged template string
- const title = Title `
-     color: red;  //primeira posição do css
-     ${textTitle}  // primeira posição de texto
-     font-size: 30px;  // segunda posição do css
-     ${textSmall}  
+ //tagged template string
+    const title = Title `
+    color: #34495e;  
+    font-size: 2.5rem; 
+    margin-bottom: 3rem;
+    ${textTitle} 
+     
  `
+const mexicano = Character`
+    width: 30%;
+    margin-left:1rem;
+    ${pathMexicano}
+`
+
  root.insertAdjacentHTML('beforeend', title)
+
+ root.insertAdjacentHTML('beforeend', mexicano)
+ root.insertAdjacentHTML('beforeend', mexicano)
+ root.insertAdjacentHTML('beforeend', mexicano)
