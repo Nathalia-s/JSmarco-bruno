@@ -32,25 +32,17 @@ const root = document.querySelector('.element')
  // e que usa o outro index.js
  
  const textTitle = 'Difficult'
- const pathMexicano = '/imagem/mexicano.png'
+
  //const textSmall = 'texto pequeno'
 
  //tagged template string
     const title = Title `
     color: #34495e;  
-    font-size: 2.5rem; 
+    font-size: 2.7rem; 
     margin-bottom: 3rem;
-    ${textTitle} 
-     
+    ${textTitle}  
  `
-const mexicano = Character`
-    width: 30%;
-    margin-left:1rem;
-    ${pathMexicano}
-`
 
  root.insertAdjacentHTML('beforeend', title)
-
- root.insertAdjacentHTML('beforeend', mexicano)
- root.insertAdjacentHTML('beforeend', mexicano)
- root.insertAdjacentHTML('beforeend', mexicano)
+ root.insertAdjacentHTML('beforeend', wrapperCharacters)
+ root.insertAdjacentHTML('beforeend', slide)
