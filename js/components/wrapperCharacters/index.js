@@ -1,4 +1,4 @@
-const pathMexicano = '/imagem/mexicano.png'
+const pathMexicano = 'imagem/mexicano.png'
 
 const mexicano = Character`
     width: 25%;
